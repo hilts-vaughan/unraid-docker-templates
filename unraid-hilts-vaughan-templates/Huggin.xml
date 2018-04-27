@@ -20,8 +20,7 @@
 	<WebUI>http://[IP]:[PORT:3000]/</WebUI>
 	<Icon>https://raw.githubusercontent.com/huginn/huginn/master/media/huginn-icon-64.png</Icon>
 	<ExtraParams></ExtraParams>
-	<Config Type="Path" Name="Config directory" Target="/config" Default="/mnt/user/appdata/sabnzbd" Mode="rw" Description="Host path to store SAB's databases and configuration." Display="always" Required="true">/mnt/user/appdata/sabnzbd</Config>
-	<Config Type="Path" Name="User shares" Target="/mnt/user" Default="/mnt/user" Mode="rw" Description="unRAID's path to user shares with cache." Display="always" Required="true">/mnt/user/</Config>
+	<Config Type="Path" Name="MySQL Database Directory" Target="/var/lib/mysql" Default="/mnt/user/appdata/Huggin" Mode="rw" Description="A place to store the persistent database of Huggins, where everything is stored in terms of application state." Display="always" Required="true">/mnt/user/appdata/Huggin</Config>
 	<!-- We do not want to run this with any kind of permissions -->
 	<Config Type="Variable" Name="Run as specified user" Target="APP_USER" Default="nobody" Description="Run application with specified user name." Mask="false" Display="advanced" Required="true">nobody</Config>
 	<!-- We need to ensure we run with the same nobody -->
